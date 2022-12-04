@@ -12,7 +12,7 @@ const colors = [
   "#e04e39",
 ];
 
-const techs = ["Diversirty", "Equity", "Inclusion", "Mission", "Projects", "ERG", "More about the company"];
+const techs = ["Diversirty", "Equity", "Inclusion", "Mission", "About", "ERG", "Value"];
 
 let current = 1;
 
@@ -38,7 +38,8 @@ let interval = setInterval(() => {
 }, 5000);
 
 boxes.forEach((box) => {
-  box.addEventListener("click", () => {
+  box.addEventListener("click", ()=> {
+
     boxes.forEach((cube) => {
       cube.classList.remove("active");
     });
