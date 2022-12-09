@@ -5,14 +5,61 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALPACOMM - Home</title>
     <link rel="stylesheet" href="learnmore.css" />
+<!--    <script>
+      $(function () {
+        $("#navbar").load("navbar.html");
+      });
+    </script> -->
   </head>
   <body>
-  
+    <section id="landing">
+    <!-- NAV BAR -->
+    <nav id="nav">
+      <div class="nav__container">
+        <img
+          class="logo"
+          src="./assets/dei_logo.png"
+          alt="The Alpaca Company Logo"
+        />
+        <ul class="nav__links">
+          <li><a href="learnmore.html" class="nav__link">Home</a></li>
+          <!-- <li><a href="about.html" class="nav__link">About</a></li> -->
+          <li><a href="erg.html" class="nav__link">Employee Resource Groups</a></li>
+          <li><a href="mentorship.html" class="nav__link">Mentorship</a></li>
+          <li><a href="contacts.html" class="nav__link">Contact</a></li>
+          <li><a href="#" class="nav__link nav__link--primary">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- LANDING HEADING - get rid of all corresponding css -->
+    <!-- <section id="landing"> -->
+      <!-- <div id="navbar"></div> -->
+      <!-- <header>
+        <div class="header__container">
+          <div class="header__description">
+            <h1 class="header--website-title">The Pumpkin Spice Initiative</h1>
+            <h2 class="header__description--pitch">
+              The Alpaca Company's diversity, equity, and inclusion initiative to better serve its
+              K-12 educators for historically marginalized and minority
+              communities
+            </h2>
+          </div>
+        </div>
+      </header>
+    </section> -->
+    <!-- ALPACA CUBES -->
     <div class="container center">
       <div class="header center">
-        <h2 class="heading">The DEI focus of Project Alpaca<span> JS </span></h2>
-        <button class="btn">Open <span>Diversity</span></button>
+        <h2 class="header__description--pitch header__welcome">Welcome to</h2>
+        <h1 class="header--website-title">THE ALPACA COMPANY's</h1>
+            <h2 class="header__description--pitch header__dei">
+              Diversity, Equity, and Inclusion Initiative
+            </h2>
+            <h1 class="website__name">ALPACOMM</h1>
+        <h2 class=" heading cube-description"><span class="cube-description--span">Click a box to learn more.</span></h2>
+        <button class="btn"><!--Open--><span></span></button>
       
       </div>
       <div class="boxes center">
@@ -79,7 +126,7 @@
   </body>
   <style> 
   </style>
-
+</section>
 
 
   <secttion class="border">
@@ -95,41 +142,37 @@
 
 </html>
   <!--FIRST PART-->     
-  <section class="first">
-           
+  <section class="learn__DEI">
+           <div class="dei__container">
           <div class="wrapper">
            <ul class="dynamic-txts">
-           <li><span>Diversity</span></li>
-           <li><span>Equity</span></li>
-           <li><span>Inclusion</span></li>
-           <li><span>Mission</span></li>
+           <li><span>DEI Statement</span></li>
+           <li><span class="no-shadow">Diversity,</span></li>
+           <li><span class="no-shadow">Equity,</span></li>
+           <li><span class="no-shadow">& Inclusion</span></li>
+           <!-- <li><span>Mission</span></li>
            <li><span>Value</span></li>
            <li><span>About</span></li>
-           <li><span>ERG</span></li>
+           <li><span>ERG</span></li> -->
       
             </ul>
           </div>
-
-
-
-
-
-             <P><h1>Paragraphs</h1></P>
+             <p class="dei__intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam soluta consequatur, vero mollitia nobis a ducimus, cumque similique repellendus tenetur pariatur architecto, eveniet exercitationem. Fuga dolorum magnam dolores non sint, excepturi illum provident facere deleniti, a delectus, hic dolore animi!</p>
           <div class="row">
       
               <div class="video-container">
                   <video src="./video/Diversity.mp4" loop autoplay muted></video>
-                  <h3>Diversity</h3>
+                  <h3>Diversity, Equity, and Inclusion</h3>
               </div>
       
               <div class="content">
-                  <p> <h2> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem cumque sit nemo pariatur corporis perspiciatis aspernatur a ullam repudiandae autem asperiores quibusdam omnis commodi alias repellat illum, unde optio temporibus.</h2></p>
-                  <p><h2> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ea est commodi incidunt magni quia molestias perspiciatis, unde repudiandae quidem.</h2></p>
-  
+                <p class="dei__statement--text">At Project Alpaca, we want to provide the best for our new generations. With each grade, comes many new personalities, cultures, and different faces. We at Project Alpaca find it crucial to have a representative staff for these children to show the diverse youth of NYC that they can do anything.
+                  We at Project Alpaca are reaffirming our commitment to maintaining our diverse staff. To provide the richness of quality that our diverse staff brings, we create an environment of equal standing for what each of our culture's knowledge can bring to the company. 
+                  </p>
               </div>
       
           </div>
-      
+        </div>
       </section>
 <!--END OF FIRST PART-->
 <secttion class="border">
@@ -140,23 +183,23 @@
 </secttion>
 
 <!--SECOND PART-->  
-      <section class="second">
-
+      <section class="second" id="second">
+        <div class="sub__container">
         <div class="row1">
     
+          <div class="init">
+            <p class="dei__statement--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio totam nobis id enim assumenda dolore sed rem cumque quis nesciunt quibusdam repellat earum laudantium hic, similique quaerat consequuntur aut rerum fugit repudiandae!</p>
+          </div>
+
             <div class="video-con">
                 <video src="./video/Equity.mp4" loop autoplay muted></video>
-                <h3>Equity</h3>
+                <h3>Diversity</h3>
             </div>
     
-            <div class="init">
-                <p><h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem cumque sit nemo pariatur corporis perspiciatis aspernatur a ullam repudiandae autem asperiores quibusdam omnis commodi alias repellat illum, unde optio temporibus.</h2></p>
-                <p><h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ea est commodi incidunt magni quia molestias perspiciatis, unde repudiandae quidem.</h2></p>
 
-            </div>
     
         </div>
-    
+      </div>
     </section>
     <!--END OF SECOND PART-->  
     <secttion class="border">
@@ -165,33 +208,53 @@
     
       </div>
     </secttion>
-    <!--THIRD PART-->
-    <section class="third">
-
-<div class="row2">
+    <!--THIRD PART - EQUITY -->
+    <section class="third" id="third">
+    <div class="sub__container">
+    <div class="row2">
 
     <div class="video-co">
-        <video src="./video/Inclusion.mp4" loop autoplay muted></video>
-        <h3>Inclusion</h3>
+        <video src="./video/ERG.mp4" loop autoplay muted></video>
+        <h3>Equity</h3>
     </div>
 
     <div class="init1">
-        <p><h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem cumque sit nemo pariatur corporis perspiciatis aspernatur a ullam repudiandae autem asperiores quibusdam omnis commodi alias repellat illum, unde optio temporibus.</h2></p>
-        <p><h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ea est commodi incidunt magni quia molestias perspiciatis, unde repudiandae quidem.</h2></p>
-
+      <p class="dei__statement--text equity--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio totam nobis id enim assumenda dolore sed rem cumque quis nesciunt quibusdam repellat earum laudantium hic, similique quaerat consequuntur aut rerum fugit repudiandae!</p>
     </div>
 
 </div>
-
+</div>
 </section>
 <secttion class="border">
 
   <div class="border1"> 
 
   </div>
-</secttion>
+</section>
+<!-- INCLUSION -->
+<section class="second" id="last">
+  <div class="sub__container">
+  <div class="row1">
+
+    <div class="init">
+      <p class="dei__statement--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio totam nobis id enim assumenda dolore sed rem cumque quis nesciunt quibusdam repellat earum laudantium hic, similique quaerat consequuntur aut rerum fugit repudiandae!</p>
+    </div>
+
+      <div class="video-con">
+          <video src="./video/Inclusion.mp4" loop autoplay muted></video>
+          <h3>Inclusion</h3>
+      </div>
+
+
+
+  </div>
+</div>
+</section>
+<!--END OF INCLUSION--> 
+
+
 <!--Four PART-->
-    <section class="four">
+    <!-- <section class="four">
 
 <div class="row3">
 
@@ -217,10 +280,10 @@
     <div class="border1"> 
   
     </div>
-  </secttion>
+  </secttion> -->
 
   <!--FIVE PART-->
-  <section class="five">
+  <!-- <section class="five">
 
     <div class="row4">
     
@@ -243,11 +306,11 @@
       <div class="border1"> 
     
       </div>
-    </secttion>
+    </secttion> -->
     <!--END OF THE FIVE PART-->  
 
     <!--START OF THE SIX PART-->  
-    <section class="six">
+    <!-- <section class="six">
 
       <div class="row5">
       
@@ -270,12 +333,12 @@
         <div class="border1"> 
       
         </div>
-      </secttion>
+      </secttion> -->
        
       <!--END OF THE PART SIX-->  
 
     <!--START OF PART SEVEN-->  
-    <section class="seven">
+    <!-- <section class="seven">
 
       <div class="row6">
       
@@ -298,7 +361,7 @@
         <div class="border1"> 
       
         </div>
-      </secttion>
+      </secttion> -->
        
       <!--- FOOTER -->
       <section class="footer">

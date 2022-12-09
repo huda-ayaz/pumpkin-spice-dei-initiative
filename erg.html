@@ -4,18 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Employee Resource Groups - PSDEI</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <title>ALPACOMM - Employee Resource Groups</title>
+    <link rel="stylesheet" href="./erg.css" />
     <script
       src="https://code.jquery.com/jquery-3.6.1.min.js"
       integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
       crossorigin="anonymous"
     ></script>
-    <script>
+    <!-- <script>
       $(function () {
         $("#navbar").load("navbar.html");
       });
-    </script>
+    </script> -->
     <script
       src="https://kit.fontawesome.com/c8e4d183c2.js"
       crossorigin="anonymous"
@@ -24,48 +24,70 @@
 
   <body>
     <section id="landing">
+      <nav id="nav">
+        <div class="nav__container">
+          <img
+            class="logo"
+            src="./assets/dei_logo.png"
+            alt="The Alpaca Company Logo"
+          />
+          <ul class="nav__links">
+            <li><a href="learnmore.html" class="nav__link">Home</a></li>
+            <!-- <li><a href="about.html" class="nav__link">About</a></li> -->
+            <li><a href="erg.html" class="nav__link">Employee Resource Groups</a></li>
+            <li><a href="mentorship.html" class="nav__link">Mentorship</a></li>
+            <li><a href="contacts.html" class="nav__link">Contact</a></li>
+            <li><a href="#" class="nav__link nav__link--primary">Login</a></li>
+          </ul>
+        </div>
+      </nav>
+
       <header class="sub-header">
-        <div id="navbar"></div>
+        <!-- <div id="navbar"></div> -->
         <div class="header__container">
           <div class="header__description">
             <h1>ERG</h1>
           </div>
         </div>
+        <section class="erg-menu">
+          <div class="container">
+            <div class="row erg-menu__row">
+              <div class="erg-menu__wrapper">
+                <div class="erg-menu-option">
+                  <button class="btn erg-menu-option__button"><a href="#erg-events" class="erg-menu__link">
+                    <h2 class="erg-menu-option__subtitle">EVENTS</h2>
+                    <div class="erg-menu-option__img">
+                      <i class="fas fa-bolt"></i>
+                    </div>
+                  </a>
+                  </button>
+                </div>
+                <div class="erg-menu-option">
+                  <button class="btn erg-menu-option__button"><a href="#erg-events" class="erg-menu__link">
+                    <h2 class="erg-menu-option__subtitle">GROUPS</h2>
+                    <div class="erg-menu-option__img">
+                      <i class="fas fa-tags"></i>
+                    </div>
+                  </a>
+                  </button>
+                </div>
+                <div class="erg-menu-option">
+                  <button class="btn erg-menu-option__button"><a href="#erg-events" class="erg-menu__link">
+                    <h2 class="erg-menu-option__subtitle">FAQ</h2>
+                    <div class="erg-menu-option__img">
+                      <i class="fas fa-book-open"></i>
+                    </div>
+                  </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </header>
     </section>
 
-    <section class="erg-menu">
-      <div class="container">
-        <div class="row erg-menu__row">
-          <div class="erg-menu__wrapper">
-            <div class="erg-menu-option">
-              <button class="btn erg-menu-option__button">
-                <h2 class="erg-menu-option__subtitle">EVENTS</h2>
-                <div class="erg-menu-option__img">
-                  <i class="fas fa-bolt"></i>
-                </div>
-              </button>
-            </div>
-            <div class="erg-menu-option">
-              <button class="btn erg-menu-option__button">
-                <h2 class="erg-menu-option__subtitle">GROUPS</h2>
-                <div class="erg-menu-option__img">
-                  <i class="fas fa-tags"></i>
-                </div>
-              </button>
-            </div>
-            <div class="erg-menu-option">
-              <button class="btn erg-menu-option__button">
-                <h2 class="erg-menu-option__subtitle">FAQ</h2>
-                <div class="erg-menu-option__img">
-                  <i class="fas fa-book-open"></i>
-                </div>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    
 
     <section class="erg-info">
       <div class="container erg-info__container">
@@ -95,12 +117,12 @@
               </li>
             </ol>
           </div>
-          <button class="btn" class="header__learn--more">Learn more</button>
+          <button class="btn" class="header__learn--more">Register</button>
         </div>
       </div>
     </section>
 
-    <section class="erg-events">
+    <section id="erg-events">
       <div class="container erg-events__container">
         <div class="row erg-events__row">
             <h2 class="erg-events__title">Upcoming Events</h2>
