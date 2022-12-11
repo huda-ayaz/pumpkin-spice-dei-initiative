@@ -23,6 +23,12 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
 img {
   width: 100%;
 }
@@ -36,6 +42,14 @@ img {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+p {
+  color: black;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+} 
 
 /*
 
@@ -82,7 +96,9 @@ button:active {
 }
 
 .logo {
-  width: 65px;
+  height: 55px;
+  margin-top: 5px;
+  width: auto;
 }
 
 ul {
@@ -113,6 +129,7 @@ li {
 
 .nav__link--primary:hover {
   text-decoration: none;
+  cursor: not-allowed;
 }
 
 .nav__link:hover {
@@ -162,7 +179,7 @@ header {
 
 /*
 
-ERG PAGE
+ERG MENU
 
 */
 
@@ -217,6 +234,12 @@ ERG PAGE
   letter-spacing: 5px;
 }
 
+/*
+
+ERG INFO
+
+*/
+
 #erg-info {
   max-width: 75vw;
 }
@@ -238,8 +261,22 @@ ERG PAGE
   font-size: 20px;
 }
 
+.register-btn {
+  cursor: not-allowed;
+}
+
+/*
+
+ERG EVENTS
+
+*/
+
 .erg-events__container {
   background-color: #f6e5c8;
+}
+
+.erg-events--button {
+  font-size: 14px;
 }
 
 .erg-events__wrapper {
@@ -248,7 +285,10 @@ ERG PAGE
 }
 
 .erg-event {
-  border: solid 1px;
+  background-color: rgb(119, 119, 119);
+  z-index: 1;
+  border: solid 1px black;
+  border-radius: 5px;
   width: 24%;
   padding: 24px;
   margin: 0 6px;
@@ -256,9 +296,241 @@ ERG PAGE
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: 0.5s;
+
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
-.erg-events__title {
+.erg-event:hover {
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+.erg-event__title {
+  margin-top: 6px;
+}
+
+.event--img {
+  opacity: 0.3;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.erg-event p {
+  color: white;
+}
+
+.clothing {
+  height: 100%;
+  width: auto;
+}
+
+/* 
+.skintech-event {
+  background-image: url(/assets/skintech-panel.jpg);
+  background-size: 110%;
+}
+
+.women-event {
+  background-image: url(/assets/brown-bag.jpg);
+  background-size: 100%;
+}
+
+.pansexuality-event {
+  background-image: url(/assets/rainbow-flag.jpg);
+  background-size: 100%;
+}
+
+.clothing-event {
+  background-image: url(/assets/clothing-event.jpg);
+  background-size: 100%;
+} */
+
+.subtitle {
   font-size: 32px;
   margin-bottom: 32px;
 }
+
+/*
+
+GROUPS
+
+*/
+
+/* .groups__container {
+} */
+
+/* .groups__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.groups__row {
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.groups__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.groups {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.group { 
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin: 6px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: calc((100% / 3)-1)
+  /*
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box; */
+}
+
+.group img {
+  width: 100%;
+}
+
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.layer:hover {
+  background: #fd8373dd;
+}
+
+.group__title {
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 36px;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+}
+
+.layer:hover h3 {
+  bottom: 74%;
+  opacity: 1;
+}
+
+.layer p {
+  width: 75%;
+  color: #f6f4f0;
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  opacity: 0;
+}
+
+.layer:hover p {
+  opacity: 1;
+  position: absolute;
+  top: 26%;
+}
+
+/* Footer */
+ 
+.footer{
+  background-image: url("./assets/Untitled_Artwork.jpg");
+  width: 100%;
+  text-align: center;
+  padding: 30px 0; 
+ }
+  
+ .footer h4{
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+ }
+ .footer p{
+  color:rgb(113, 78, 34)
+ }
+ .iconss .fa{
+  color:rgb(240, 111, 46);
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+ }
+ .iconss img{
+  width: 25px;
+  height: 25px;
+ }
+ .footer-bottom img{
+  width: 35px;
+  height: 35px;
+ }
+ .iconss{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+ }
+ .icons li{
+  margin: 0 10px;
+ }
+ .icons a{
+  text-decoration: none;
+  color: #fd8473;
+ }
+ .icons a i{
+  font-size: 1.1rem;
+  transition: color .4s ease;
+  
+ }
+ .icons a:hover i{
+  color: aqua;
+ }
+ 
+ .alpacomm-footer {
+  color: #fd8473;
+  font-size: 48px;
+  margin: 0;
+  margin-bottom: -5x;
+ }
+
+ .other-text-footer {
+  color: #714e22;
+  font-size: 10px;
+  padding: 0;
+  margin: 0;
+ }

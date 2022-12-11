@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <meta charset="utf-8" />
-    <title>Contact - PSDEI</title>
+    <link rel="icon" href="/assets/alpaca logo no text.png">
+    <title>ALPACOMM - Contact</title>
     <link rel="stylesheet" href="styles.css" />
     <script
       src="https://code.jquery.com/jquery-3.6.1.min.js"
       integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
       crossorigin="anonymous"
     ></script>
-    <script>
+    <!-- <script>
       $(function () {
         $("#navbar").load("navbar.html");
       });
-    </script>
+    </script> -->
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link
       rel="stylesheet"
@@ -24,57 +26,276 @@
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   </head>
 
+  <!--Start of the Banner-->
+
   <body>
-    <!--class="contact__body" removed-->
     <section id="landing">
+      <nav id="nav">
+        <div class="nav__container">
+          <img
+            class="logo"
+            src="./assets/alpaca logo w text.png"
+            alt="The ALPACOMM Logo"
+          />
+          <ul class="nav__links">
+            <li><a href="learnmore.html" class="nav__link">Home</a></li>
+            <!-- <li><a href="about.html" class="nav__link">About</a></li> -->
+            <li>
+              <a href="erg.html" class="nav__link">Employee Resource Groups</a>
+            </li>
+            <li><a href="dashboard.html" class="nav__link">Mentorship</a></li>
+            <li><a href="contacts.html" class="nav__link">Contact</a></li>
+            <li><a href="#" class="nav__link nav__link--primary">Login</a></li>
+          </ul>
+        </div>
+      </nav>
+
       <header class="sub-header">
-        <div id="navbar"></div>
         <div class="header__container">
           <div class="header__description">
-            <h1>Contact Us</h1>
+            <h1 class="contact-us-header">Contact Us</h1>
           </div>
         </div>
       </header>
     </section>
-    <!-- <div class="container"> removed because no closing div and no effect w/o it-->
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <form action="">
-      <div class="title">
-        <h2><i>CONTACT US</i></h2>
-        <h4><em>Your questions or comments are very important to us.</em></h4>
-      </div>
-      <div class="half">
-        <div class="item">
-          <label for="name">FULL NAME</label>
-          <input type="text" id="name" />
+
+    <!-- End of the Landing-->
+
+    <!--Start of the questrion-->
+
+    <meta charset="utf-8" />
+    <title>FAQ</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    ></script>
+    <style type="text/css">
+      /* body {
+        background: white;
+        padding-top: 20px;
+        font-family: monospace;
+      } */
+      .header {
+        border-radius: 20px 20px 0px 0px;
+        padding: 10px 0px;
+        background: #f6e5c8;
+        color: #fff;
+        width: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+      }
+      .faq-item {
+        margin-bottom: 40px;
+        margin-top: 40px;
+      }
+      .faq-body {
+        background-color: #afaca5;
+        color: #0c0b0b;
+        display: none;
+        margin-top: 30px;
+      }
+      .faq-wrapper {
+        width: 75%;
+        margin: 0 auto;
+      }
+      .faq-inner {
+        padding: 30px;
+        background: whitesmoke;
+      }
+      .faq-plus {
+        float: right;
+        font-size: 1.4em;
+        line-height: 1em;
+        cursor: pointer;
+      }
+      .faq-body h6 {
+        text-indent: 50px;
+      }
+      hr {
+        background-color: #9b9b9b;
+      }
+      .faq-body {
+        line-height: 1.8;
+        background-color: rgba(119, 119, 119, 0.161);
+        border-radius: 6px;
+        padding: 20px;
+        font-size: 15px;
+      }
+    </style>
+    <div class="container">
+      <div class="row">
+        <div class="faq-wrapper">
+          <div class="header">
+            <h2>Frequently Asked Questions</h2>
+          </div>
+          <div class="faq-inner">
+            <div class="faq-item">
+              <h5>
+                What constitutes harrasment in the workplace?
+                <span class="faq-plus">&plus;</span>
+              </h5>
+              <div class="faq-body">
+                To attack someone, whether physically or verbally, in ways that are meant to intimidate or embarrass an employee. This can include insults, inapporpriate pictures or objects, or a variety of other things or actions that may intefere with an employee's ability to work.
+                <h7>(Source: KnowledgeCity)</h7>
+              </div>
+            </div>
+            <hr />
+            <div class="faq-item">
+              <h5>
+                What to do if you need help or need to report something?
+                <span class="faq-plus">&plus;</span>
+              </h5>
+              <div class="faq-body">
+                <li>1. Follow the company policy in your handbook (if any).</li>
+                <li>2. Talk with your supervisor.</li>
+              </div>
+            </div>
+            <hr />
+            <div class="faq-item">
+              <h5>
+                What are some examples of sexual harassment?
+                <span class="faq-plus">&plus;</span>
+              </h5>
+              <div class="faq-body">
+                <li>1. Derogatory remarks about a specific gender</li>
+                <li>
+                  2. Verbal harrassment, including jokes about gender or sexual
+                  oritentation
+                </li>
+                <li>3. Unwanted physical contract or sexual advances</li>
+                <li>
+                  4. Unwanted sexually explicit photos, calls, email, texts
+                </li>
+                <li>
+                  5. There are more examples and flags also there are resources
+                  to use
+                </li>
+                <h7>(Source: Workharassment)</h7>
+              </div>
+            </div>
+            <hr />
+            <div class="faq-item">
+              <h5>
+                How do you report and retaliate against sexual harassment at
+                work?
+                <span class="faq-plus">&plus;</span>
+              </h5>
+              <div class="faq-body">
+                <li>
+                  1. Talk with a lawyer that have experience for sexual
+                  harrasment cases.
+                </li>
+                <li>
+                  2. Talk with the harraser to stop and that you have finding
+                  uncomfortable with someone you know if possible definitely not
+                  alone
+                </li>
+                <li>3. Report to your superior and HR</li>
+                <li>
+                  a. Remember to leave a paper trail or record of the
+                  conversation
+                </li>
+                <li>b. Remember evidence are doing the talking not you</li>
+                <h7>(Source: Office of the New York State Comptoller)</h7>
+              </div>
+            </div>
+            <hr />
+            <div class="faq-item">
+              <h5>
+                What to do if after confrontation they still continue?
+                <span class="faq-plus">&plus;</span>
+              </h5>
+              <div class="faq-body">
+                <li>
+                  1. Contract the Equal Employment Opportunity Commission (EEOC)
+                  with a lawyer if possible if not then call 1-800-669-4000
+                  (1-800-669-6820 (TTY)), visiting their website at www.eeoc.gov
+                  or via email at info@eeoc.gov.
+                </li>
+                <li>2. Remember to have evidence to fight in court.</li>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="item">
-          <label for="email">EMAIL</label>
-          <input type="text" id="email" />
-        </div>
       </div>
-      <div class="full">
-        <label for="message">MESSAGE</label>
-        <textarea name="" id="message"></textarea>
+    </div>
+    <script type="text/javascript">
+      $(".faq-plus").on("click", function () {
+        $(this).parent().parent().find(".faq-body").slideToggle();
+      });
+    </script>
+
+    <!--End of the question-->
+    <section id="contact-form">
+      <div class="contact-form__container">
+        <form action="">
+          <div class="title">
+            <h2><i>CONTACT US</i></h2>
+            <p class="priv-state">(Your privacy is important to us. You may exclude your name in your inquiry to anonymously submit complaints or receive help.)</p>
+          </div>
+          <div class="half">
+            <div class="item">
+              <label for="name">FULL NAME</label>
+              <input type="text" id="name" />
+            </div>
+            <div class="item">
+              <label for="email">EMAIL</label>
+              <input type="text" id="email" />
+            </div>
+          </div>
+          <div class="full">
+            <label for="message">MESSAGE</label>
+            <textarea name="" id="message"></textarea>
+          </div>
+          <div class="action">
+            <input type="submit" class="btn" value="SEND MESSAGE" />
+            <input type="reset" class="btn" value="RESET" />
+          </div>
+          <!-- <div class="icons">
+            <a href="https://www.instagram.com/projectalpacany/" target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/projectalpaca/"
+              target="_blank"
+            >
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </div> -->
+        </form>
       </div>
-      <div class="action">
-        <input type="submit" class="btn" value="SEND MESSAGE" />
-        <input type="reset" class="btn" value="RESET" />
-      </div>
-      <div class="icons">
-        <a href="https://www.instagram.com/projectalpacany/" target="_blank">
-          <ion-icon name="logo-instagram"></ion-icon>
-        </a>
-        <a
-          href="https://www.linkedin.com/company/projectalpaca/"
-          target="_blank"
-        >
-          <ion-icon name="logo-linkedin"></ion-icon>
-        </a>
-      </div>
-    </form>
+    </section>
   </body>
+
+  <!--FOOTER START HERE-->
+  <!--- FOOTER -->
+  <section class="footer">
+    <h1 class="alpacomm-footer"><b>ALPACOMM</b></h1>
+    <p class="other-text-footer">85 Broad St, 17th floor (Downtown Manhattan) </p>
+     <div class="iconss">
+      <li><a href="https://www.facebook.com/projectalpacany"><i class="fa fa-facebook"></i></a></li>
+      <!-- <img src="./assets/dei_logo.png"> -->
+      <li><a href="https://www.instagram.com/pumpkinspicealpacees/"><i class="fa fa-instagram"></i></a></li>
+      <!-- <img src="./assets/dei_logo.png"> -->
+      <li><a href="https://www.linkedin.com/company/projectalpaca/"><i class="fa fa-linkedin-square"></i></a></li>
+    </div>
+    <div class="footer-bottom">
+      <img src="./assets/alpaca logo no text.png">
+      <p class="other-text-footer"><b><br>Created by Tamaya Sara, Huda Ayaz, Cindy Illas, and Darren Gao</b></p>
+      <p class="other-text-footer"><br>Copyright &copy;2022.  All rights reserved by <span>ALPACOMM.</span></p>
+   </div>
+   </section>
 </html>

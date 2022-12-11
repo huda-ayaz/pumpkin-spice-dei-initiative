@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Reservation Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="reservation.css">
+    </head>
+    <body>
+        
+        <section class = "banner">
+            <h2>RESERVE YOUR SPOT AT AN EVENT WITH YOUR GROUP</h2>
+            <div class = "card-container">
+                <div class = "card-img">
+                    <!-- image here -->
+                </div>
+
+                <div class = "card-content">
+                    <h3>Reservation</h3>
+                    <form>
+                        <div class = "form-row">
+                            <select name = "days">
+                                <option value = "day-select">Attending?</option>
+                                <option value = "sunday">Yes</option>
+                                <option value = "monday">No</option>
+                                <option value = "tuesday">Maybe</option>
+                                <!-- <option value = "wednesday">Wednesday</option>
+                                <option value = "thursday">Thursday</option>
+                                <option value = "friday">Friday</option>
+                                <option value = "saturday">Saturday</option> -->
+                            </select>
+
+                            <select name = "hours">
+                                <option value = "hour-select">Event Title</option>
+                                <option value = "10">SkinTECH Video Game Development Guest Panel</option>
+                                <option value = "10">Pansexual Panel</option>
+                                <option value = "10">Traditional Clothing Day</option>
+                                <option value = "10">Brown Bag Lunch</option>
+                                <!-- <option value = "10">18: 00</option>
+                                <option value = "10">20: 00</option>
+                                <option value = "10">22: 00</option> -->
+                            </select>
+                        </div>
+
+                        <div class = "form-row">
+                            <input type = "text" placeholder="Full Name">
+                            <input type = "text" placeholder="ID Number">
+                        </div>
+
+                        <div class = "form-row">
+                            <input type = "number" placeholder="Any Guests?" min = "Group 1">
+                            <input type = "submit" value = "Book Appointment">
+                        </div>
+
+                        <div class="form-row text-align">
+                            <a href="erg.html" class="return-link">Return to view events.</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+    </body>
+</html>

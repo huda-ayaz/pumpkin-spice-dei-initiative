@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ALPACOMM - Mentorship Dashboard</title>
+  <link rel="icon" href="/assets/alpaca logo no text.png">
+  <link rel="stylesheet" href="dashboard.css" /> 
+
+</head>
+
+<!--Start of the Banner-->
+
+<body>
+  
+  <section id="landing">
+    <nav id="nav">
+      <div class="nav__container">
+        <img class="logo" src="./assets/alpaca logo w text.png" alt="The ALPACOMM Logo" />
+        <ul class="nav__links">
+          <li><a href="learnmore.html" class="nav__link">Home</a></li>
+          <!-- <li><a href="about.html" class="nav__link">About</a></li> -->
+          <li><a href="erg.html" class="nav__link">Employee Resource Groups</a></li>
+          <li><a href="dashboard.html" class="nav__link">Mentorship</a></li>
+          <li><a href="contacts.html" class="nav__link">Contact</a></li>
+          <li><a href="#" class="nav__link nav__link--primary">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="sub-header">
+      <div class="header__container">
+        <div class="header__description">
+          <h1>Mentorship Dashboard</h1>
+        </div>
+      </div>
+    </header>
+  </section>
+
+  <!-- End of the Landing-->
+
+
+  <!--Updates Section-->
+  <section class="updates" id="updates">
+    <div class="title__container">
+      <div class="md-welcome">
+        <h2 class="welcome">Welcome to your mentorship dashboard!</h2>
+        <h2 class="your-mentor">Your mentor is <span class="mentor-name">Claire Igot</span>.</h2>
+      </div>
+      <div class="updates__container">
+        <div class="sessions__wrapper">
+          <img class="claire-db" src="/assets/Claire.PNG" alt="">
+          <h2>Upcoming Sessions</h2>
+          <div class="grid-container">
+            <div class="grid-item">
+              <h2 class="date">12/12</h2>
+              <h2 class="desc">Join your mentor for an introductory coffee chat</h2>
+            </div>
+            <div class="grid-item">
+              <h2 class="date">12/13</h2>
+              <h2 class="desc">Spend a day shadowing your mentor in their work</h2>
+            </div>
+            <div class="grid-item">
+              <h2 class="date">12/19</h2>
+              <h2 class="desc">Weekly Check-In: Catch up with your mentor on how your first week was</h2>
+            </div>
+          </div>
+        </div>
+        <!--Images-->
+        <div class="engineering--wrapper">
+          <img src="./assets/remote-worker.svg" class="eng-img" alt="Computer man">
+          <img src="./assets/engineering.svg" class="eng-img" alt="Computer man">
+          <img src="./assets/present.svg" class="eng-img" alt="Computer man">
+        </div>
+        <div class="progress--wrapper">
+          <div class="circular">
+            <!-- <div class="inner"></div> -->
+            <div class="outer"></div>
+            <div class="numb">
+              0%
+            </div>
+            <!-- <div class="circle">
+              <div class="dot">
+                <span></span>
+              </div>
+              <div class="bar left">
+                <div class="progress"></div>
+              </div>
+              <div class="bar right">
+                <div class="progress"></div>
+              </div>
+            </div> -->
+          </div>
+          <h2 class="line1">There are <span>6 of 6</span> months<br>left for your mentorship</h2>
+          <h2 class="line2">Reach out to your mentor if you need help</h2>
+          <h2 class="line2">If you have questions about the<br>mentorship program, reach out to our program<br>coordinators through our <a href="contacts.html">contact page</a></h2>
+        </div>
+      </div>
+    </div>
+ <!-- <script>
+    const numb = document.querySelector(".numb");
+    let counter = 0;
+    setInterval(()=>{
+      if(counter == 100){
+        clearInterval();
+      }else{
+        counter+=1;
+        numb.textContent = counter + "%";
+      }
+    }, 80);
+ </script> -->
+ </section>
+
+<!--End of Images-->
+
+      <!--The Pie Chart start here-->
+  <!--The end of the Pie Chart-->
+  <!--End Second Sectoin-->
+
+  <!--Start of the Mentors-->
+  <section class="Mentors" id="mentors">
+    <h2 class="subtitle">Our Mentors</h2>
+    <p class="mentor-intro">At The Alpaca Company, we have an ever-growing list of the experienced employees here who are dedicated to helping their mentees establish themselves as smoothly as possible into the workplace. If you find that your current mentors can not fulfill your needs, feel free to reach out to another mentor and find a better fit, although we do our best to pair you up with the mentor that best aligns with your needs</p>
+
+    <div class="pics">
+      <div class="mentors-col">
+        <img src="assets/Claire.PNG">
+        <h2>Claire Igot</h2>
+        <p><h3>Business management professional with extensive experience in process development, implementation and maintenance. Ability to design system-wide improvements concurrently focused on value-based incremental changes. Highly respected for ability to lead, inspire and motivate individual/teams. </h3></p>
+      </div>
+
+      <div class="mentors-col">
+        <img src="assets/Catherin.PNG">
+        <h2> Catherine Man</h2>
+        <p><h3>Catherine has taken the lead on digital projects, both large and small, and is interested in developing solutions to address some of our most pressing education challenges. A Masters degree in Instructional Technology and Media equipped her with pedagogical knowledge and design thinking, helping her connect technological innovation with a service for a greater good.</h3></p>
+      </div>
+
+      <div class="mentors-col">
+        <img src="assets/Michelle.PNG">
+        <h2> Michelle Ng</h2>
+        <p><h3>Hong Kong-born, and NYC-based mission-driven product designer. Michelle has experience as a founder, designer, UI/UX Design Consultant, Product Designer, Design Lead, Web Designer, Software Developer, Analyst Developor, and more. Some companies she has experience with are Nike, Goldman Sachs, The New York Times, The United Nations, eBay, and, of course, The Alpaca Company.</h3></p>
+      </div>
+    </div>
+  </section>
+</body>
+<!--- FOOTER -->
+<section class="footer">
+  <h1 class="alpacomm-footer"><b>ALPACOMM</b></h1>
+  <p class="other-text-footer">85 Broad St, 17th floor (Downtown Manhattan) </p>
+   <div class="iconss">
+    <li><a href="https://www.facebook.com/projectalpacany"><i class="fa fa-facebook"></i></a></li>
+    <!-- <img src="./assets/dei_logo.png"> -->
+    <li><a href="https://www.instagram.com/pumpkinspicealpacees/"><i class="fa fa-instagram"></i></a></li>
+    <!-- <img src="./assets/dei_logo.png"> -->
+    <li><a href="https://www.linkedin.com/company/projectalpaca/"><i class="fa fa-linkedin-square"></i></a></li>
+  </div>
+  <div class="footer-bottom">
+    <img src="./assets/alpaca logo no text.png">
+    <p class="other-text-footer"><b><br>Created by Tamaya Sara, Huda Ayaz, Cindy Illas, and Darren Gao</b></p>
+    <p class="other-text-footer"><br>Copyright &copy;2022.  All rights reserved by <span>ALPACOMM.</span></p>
+ </div>
+ </section>
+</html>

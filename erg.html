@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ALPACOMM - Employee Resource Groups</title>
+    <title>ALPACOMM - ERGs</title>
+    <link rel="icon" href="/assets/alpaca logo no text.png">
     <link rel="stylesheet" href="./erg.css" />
     <script
       src="https://code.jquery.com/jquery-3.6.1.min.js"
       integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
       crossorigin="anonymous"
     ></script>
-    <!-- <script>
-      $(function () {
-        $("#navbar").load("navbar.html");
-      });
-    </script> -->
     <script
       src="https://kit.fontawesome.com/c8e4d183c2.js"
       crossorigin="anonymous"
@@ -28,14 +25,14 @@
         <div class="nav__container">
           <img
             class="logo"
-            src="./assets/dei_logo.png"
+            src="./assets/alpaca logo w text.png"
             alt="The Alpaca Company Logo"
           />
           <ul class="nav__links">
             <li><a href="learnmore.html" class="nav__link">Home</a></li>
             <!-- <li><a href="about.html" class="nav__link">About</a></li> -->
             <li><a href="erg.html" class="nav__link">Employee Resource Groups</a></li>
-            <li><a href="mentorship.html" class="nav__link">Mentorship</a></li>
+            <li><a href="dashboard.html" class="nav__link">Mentorship</a></li>
             <li><a href="contacts.html" class="nav__link">Contact</a></li>
             <li><a href="#" class="nav__link nav__link--primary">Login</a></li>
           </ul>
@@ -63,7 +60,7 @@
                   </button>
                 </div>
                 <div class="erg-menu-option">
-                  <button class="btn erg-menu-option__button"><a href="#erg-events" class="erg-menu__link">
+                  <button class="btn erg-menu-option__button"><a href="#groups" class="erg-menu__link">
                     <h2 class="erg-menu-option__subtitle">GROUPS</h2>
                     <div class="erg-menu-option__img">
                       <i class="fas fa-tags"></i>
@@ -72,7 +69,7 @@
                   </button>
                 </div>
                 <div class="erg-menu-option">
-                  <button class="btn erg-menu-option__button"><a href="#erg-events" class="erg-menu__link">
+                  <button class="btn erg-menu-option__button"><a href="contacts.html" class="erg-menu__link">
                     <h2 class="erg-menu-option__subtitle">FAQ</h2>
                     <div class="erg-menu-option__img">
                       <i class="fas fa-book-open"></i>
@@ -94,64 +91,125 @@
         <div class="row erg-info__text-wrapper">
           <div class="erg__text-para">
             <h2>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatibus, inventore. Odit eos atque hic aspernatur rerum,
-              numquam officia ratione magnam quae dolore culpa iusto iste
-              delectus. Asperiores, consectetur? Obcaecati, voluptates.
+              ERG stands for Employee Resource Groups. Each employee-led group represents a community, an identity, and a support system for our underrepresented groups. Attend our events, create lasting connections, and feel more at home in The Alpaca Company by attending these events for our groups.
             </h2>
           </div>
           <div class="erg-info__text-list">
             <ol>
               <li>
-                1. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Perspiciatis laudantium doloribus iste excepturi, voluptate
-                corrupti?
+                1. Register on this website using your employee ID and log in to join any ERGs you are interested in, or even start one of your own.
               </li>
               <li>
-                2. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Inventore facilis, incidunt sapiente dolore non quod!
+                2. Stay posted with our events through our upcoming events calendar.
               </li>
               <li>
-                3. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Tempore sunt a saepe facilis asperiores veniam.
+                3. For more information, reach out to the senior representative for the resource group(s) you want to join or are already a part of. 
+
               </li>
             </ol>
           </div>
-          <button class="btn" class="header__learn--more">Register</button>
+          <button class="btn header__learn--more register-btn">Register</button>
         </div>
       </div>
     </section>
 
     <section id="erg-events">
       <div class="container erg-events__container">
+        <h2 class="subtitle">Upcoming Events</h2>
         <div class="row erg-events__row">
-            <h2 class="erg-events__title">Upcoming Events</h2>
           <div class="erg-events__wrapper">
-            <div class="erg-event">
-                <figure class="erg-event__img--wrapper"><img src="" alt=""></figure>
-                <h2 class="erg-event__title">Event #1</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, facilis!</p>
+            <div class="erg-event"> 
+              <img class="event--img" src="/assets/skintech-panel.jpg" alt="">
+              <div class="content">
+                <h4>December 12, 2022 at 12:00 PM in the Gold Lounge</h4>
+                <h2 class="erg-event__title">SkinTECH Video Game Development Guest Panel</h2>
+                <p>Welcome our guest speakers! These experts in the video game development industry will give us insight on their journey through their career, and the trials and tribulation they have faced as people of color in tech. Attend to learn more.</p>
+                <a href="reservation.html"><button class="btn" class="header__learn--more">RSVP</button></a>
+              </div>
             </div>
             <div class="erg-event">
-                <figure class="erg-event__img--wrapper"><img src="" alt=""></figure>
-                <h2 class="erg-event__title">Event #2</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, facilis!</p>
+              <img class="event--img" src="/assets/rainbow-flag-beach.jpg" alt="">
+              <div class="content">
+                <h4>December 14, 2022 at 8:00 PM in Room 211</h4>
+                <h2 class="erg-event__title">Pansexual Panel</h2>
+                <p>We shed light on sexualities that we don't often talk about! We talk about acceptance and show love to us all.</p>
+                <a href="reservation.html"><button class="btn" class="header__learn--more">RSVP</button></a>
+              </div>
+          </div>
+            <div class="erg-event">
+              <img class="event--img clothing" src="/assets/clothing-event.jpg" alt="">
+              <div class="content">
+                <h4>December 14, 2022 ALL DAY</h4>
+                <h2 class="erg-event__title">Traditional Clothing Day</h2>
+                <p>We represent who we are, and our heritage through the traditional clothing we wear. We consolidate our diverse identities throughout our company, and take this opportunity to see each other’s personal histories past the business attire!</p>
+                <a href="reservation.html"><button class="btn" class="header__learn--more">RSVP</button></a>
+              </div>
             </div>
             <div class="erg-event">
-                <figure class="erg-event__img--wrapper"><img src="" alt=""></figure>
-                <h2 class="erg-event__title">Event #3</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, facilis!</p>
-            </div>
-            <div class="erg-event">
-                <figure class="erg-event__img--wrapper"><img src="" alt=""></figure>
-                <h2 class="erg-event__title">Event #4</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, facilis!</p>
+              <img class="event--img" src="/assets/brown-bag.jpg" alt="">
+              <div class="content">
+                <h4>December 15, 2022 at 1:00 PM in the Café</h4>
+                <h2 class="erg-event__title">Brown Bag Lunch</h2>
+                <p>Calling all WomenInTech: let's catch up on how we're feeling and talk about our experiences at the Alpaca Company.</p>
+                <a href="reservation.html"><button class="btn" class="header__learn--more">RSVP</button></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <section id="groups">
+      <div class="container groups__container">
+        <h2 class="subtitle">Our Employee Resource Groups</h2>
+        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure atque ullam non quisquam quibusdam aperiam.</p> -->
+        <div class="row groups__row">
+          <div class="groups__wrapper">
+            <div class="group">
+                <img src="/assets/poc.jpg" alt="">
+                <div class="layer">
+                  <h3 class="group__title">SkinTECH</h3>
+                  <p>People of all ethnicities and races are given the platform to share and relate to one another their difficulties in the workplace. It will open up a comfortable space for our marginalized ethnic groups to discuss microaggressions and opportunities where we can include cultural expression into our work. Here, we share what’s going well within the company’s efforts of inclusion and fixes we need to see in the workplace to accommodate our diverse staff. </p>
+                </div>
+            </div>
+            <div class="group">
+                <img src="/assets/womenInTech.jpg" alt="">
+                <div class="layer">
+                  <h3 class="group__title">WomenInTech</h3>
+                  <p>WomanInTech is a place where women can safely feel able to enhance their work skills, engage in supportive talks, and grow their confidence in the workplace.  The space gives a safe place to discuss women-centered issues, including how to protect their status during pregnancy and maternity leave, taking leadership, and asking for promotions. This ERG pairs members with a mentor or peer to support them throughout their Alpaca Company career.</p>
+                </div>
+            </div>
+            <div class="group">
+                <img src="/assets/disabilities.jpg" alt="">
+                <div class="layer">
+                  <h3 class="group__title">DisabilityInTech</h3>
+                  <p>People with disabilities are able to have the visibility they need within the workplace in DisabilityInTech. We discuss issues within the company or our personal lives that may impact us, including discrimination, the feeling of otherness, and lack of accessibility. We help others with similar disabilities seek accommodation with proper form in the workplace. The group will consistently search for feedback to improve the next meeting in the hope that more people to engage in the conversation. We use our voice to give a better outline on a fairer environment for people with disabilities. </p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
     <main></main>
   </body>
+        <!--- FOOTER -->
+        <section class="footer">
+          <h1 class="alpacomm-footer"><b>ALPACOMM</b></h1>
+          <p class="other-text-footer">85 Broad St, 17th floor (Downtown Manhattan)</p>
+           <div class="iconss">
+            <li><a href="https://www.facebook.com/projectalpacany"><i class="fa fa-facebook"></i></a></li>
+            <!-- <img src="./assets/dei_logo.png"> -->
+            <li><a href="https://www.instagram.com/pumpkinspicealpacees/"><i class="fa fa-instagram"></i></a></li>
+            <!-- <img src="./assets/dei_logo.png"> -->
+            <li><a href="https://www.linkedin.com/company/projectalpaca/"><i class="fa fa-linkedin-square"></i></a></li>
+          </div>
+          <div class="footer-bottom">
+            <img src="./assets/alpaca logo no text.png">
+            <p class="other-text-footer"><b>Created by Tamaya Sara, Huda Ayaz, Cindy Illas, and Darren Gao.</b></p>
+            <p class="other-text-footer">Copyright &copy;2022.  All rights reserved by <span>ALPACOMM.</span></p>
+         </div>
+         </section>
 </html>
